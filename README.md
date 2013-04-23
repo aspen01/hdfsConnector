@@ -2,12 +2,17 @@ hdfsConnector
 =============
 
 package for hdfs connection
+<br />
 
-* make package
-  sh mkJar.sh
+* make package <br />
+<code>
+  $ sh mkJar.sh
+</code>
+<br />
 
 * Usage
-  java -jar hdfsConnector-1.0.4.jar 
+<pre><code>
+  $ java -jar hdfsConnector-1.0.4.jar 
            [-ls <path>]
            [-lsr <path>]
            [-du <path>]
@@ -36,8 +41,7 @@ package for hdfs connection
            [-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
            [-chown [-R] [OWNER][:[GROUP]] PATH...]
            [-chgrp [-R] GROUP PATH...]
-           [-help [cmd]]
-
+           [-help [cmd]] <br>
 Generic options supported are
 -conf <configuration file>     specify an application configuration file
 -D <property=value>            use value for given property
@@ -46,3 +50,4 @@ Generic options supported are
 -files <comma separated list of files>    specify comma separated files to be copied to the map reduce cluster
 -libjars <comma separated list of jars>    specify comma separated jar files to include in the classpath.
 -archives <comma separated list of archives>    specify comma separated archives to be unarchived on the compute machines.
+</code></pre>
